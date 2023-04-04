@@ -6,7 +6,7 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/enotes
-ExecStart=/home/ubuntu/enotes/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock Enotes_Management_System.wsgi:application
+ExecStart=/home/ubuntu/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/enotes/Enotes_Management_System/Enotes_Management_System.sock Enotes_Management_System.wsgi:application
 
        
 [Install]
